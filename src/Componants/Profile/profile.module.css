@@ -1,0 +1,90 @@
+/* Styles for Profile component only */
+
+/* Container wrapping profile picture and form */
+.profileContainer {
+    position: relative;
+  
+
+    width: 100%;
+  }
+  
+  /* Profile image styling */
+  .profileContainer img {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* Form wrapper */
+  .usersContainer {
+    margin-top: 80px;
+    padding: 3rem;
+  
+
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  /* Labels */
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(108, 108, 108, 1);
+  }
+  
+  /* Inputs */
+  .input {
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgba(229, 229, 229, 1);
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .input::placeholder {
+    color: rgba(108, 108, 108, 1);
+    font-size: 14px;
+    opacity: 1;
+  }
+  
+  /* Error messages */
+  .errormessage {
+    color: rgb(79, 31, 31);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .usersContainer {
+      padding: 1.5rem !important;
+      margin-top: 8px !important;
+      box-shadow: none !important;
+    }
+  
+    .input {
+      width: 100% !important;
+      margin-bottom: 1rem !important;
+    }
+  
+    .row > .col-lg-6 {
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+  
+    .profileContainer img {
+      top: 25px;
+      width: 110px;
+      height: 110px;
+    }
+  }
+  

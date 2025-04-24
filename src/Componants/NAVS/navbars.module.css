@@ -1,0 +1,23 @@
+.topNav {
+    background-color: rgba(57, 50, 128, 1) !important;
+    margin: 0;
+    padding: 0.25rem 0;
+    width: 100%;
+    z-index: 1030;
+  }
+  
+  .phoneText {
+    color: #fff;
+    margin-left: 0.5rem;
+  }
+  
+  .iconLink {
+    color: #fff !important;
+    padding: 0.25rem !important;
+    display: flex;
+    align-items: center;
+  }
+  .MENUUUo{
+    font-size: 14px;
+    
+  }

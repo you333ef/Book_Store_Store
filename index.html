@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<!-- تحط translate="no" على الـ html -->
+<html lang="en" translate="no" class="notranslate">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+
+    <!-- ميزة جوجل نفسها بتقرأ ده وتبطل الترجمة أوفًلاين -->
+    <meta name="google" content="notranslate" />
+
+    <!-- لو حابب تضيف HTTP header برضه -->
+    <meta http-equiv="Content-Language" content="en" />
+
+    <title>||Book_Store||</title>
   </head>
   <body>
     <div id="root"></div>
