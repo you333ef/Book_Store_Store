@@ -1,5 +1,5 @@
 import React from 'react'
-import './AuthProject.css'
+import './authproject.css'
 import { Outlet } from 'react-router-dom'
 import TopNav from '../NAVS/TopNav'
 import Down_Navs from '../NAVS/Down_Navs'
