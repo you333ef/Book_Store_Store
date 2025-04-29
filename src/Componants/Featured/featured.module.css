@@ -1,0 +1,125 @@
+.FEFE_SECTION{
+    overflow: hidden !important;
+}
+.image img{
+    width: 60% !important;
+}
+.image {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.details h2 ,.details h5 {
+   color: rgba(57, 50, 128, 1);
+}
+/* TODO: P + P , Not Alone */
+.details p {
+    color: rgba(122, 122, 122, 1);
+}
+.details h6{
+    color: rgba(237, 85, 59, 1);
+}
+.details button{
+    color: rgba(57, 50, 128, 1);
+    margin-top:20px;
+    background-color: rgba(247, 255, 254, 1);
+    border: 1px solid rgba(57, 50, 128, 1);
+    padding: 5px;
+    display: flex !important;
+    align-items: center;
+    gap: 5px;
+    width: 120px;
+    justify-content: center;
+    border-radius: 4px;
+}
+.details button:hover{
+    background-color: rgba(57, 50, 128, 1);
+    color: rgba(247, 255, 254, 1);
+    transition: all 0.3s ease-in-out;
+}
+.details_Eldetails p:first-of-type {
+    position: relative;
+    display: inline-block;
+    color: #999; 
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .details_Eldetails p:first-of-type::before {
+    content: "";
+    position: absolute;
+    top: -10px; 
+    left: 0;
+    width: 60px; 
+    height: 3px; 
+    background-color: rgba(237, 85, 59, 1); 
+  }
+  .details_Eldetails{
+    margin-top: 30px;
+  }
+  
+@media(max-width: 1029px) {
+    .details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        flex-direction: column;
+    }
+    .details button{
+        margin: auto;
+        margin-top: 10px;
+    }
+    .details h2{
+        font-size: 30px;
+    }
+    .image img{
+        width: 50% !important;
+    }
+
+
+}
+/* الحاوية اللي فيها النقاط */
+.paginationDots {
+  display: flex;
+  justify-content: center;  /* عشان تبقى في النص */
+  align-items: center;
+  gap: 10px;                /* المسافة بين النقاط */
+  /* المسافة من فوق بتتحكم فيها بـ mt-4 من Bootstrap */
+}
+
+/* الشكل الافتراضي للنقطة */
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;   /* لون النقطة الرمادي */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* الشكل للنقطة النشطة */
+.active {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid rgba(237, 85, 59, 1);  /* الهيئة الخارجية */
+  border-radius: 50%;
+  position: relative;
+}
+
+/* الدائرة الداخلية داخل النقطة النشطة */
+.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  background-color: rgba(237, 85, 59, 1);
+  border-radius: 50%;
+}

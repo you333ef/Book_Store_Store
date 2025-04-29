@@ -1,0 +1,173 @@
+.All_Container {
+    
+  
+    margin: 0 auto;
+  }
+  
+  .All_row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  
+  .All_COL1 {
+    padding: 1rem;
+    
+  }
+  
+  .All_Top_Intro {
+    text-align: left;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .All_Top_Intro h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4a2e81;
+    line-height: 1.3;
+   
+  }
+  
+  .All_Top_Intro p {
+    color:rgba(57, 50, 128, 1);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  
+  .All_Time {
+    display: flex;
+    gap: 1.5rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
+  .Time_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .Time_number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #e85c41;
+    margin-bottom: 0.5rem;
+    min-width: 3rem;
+    text-align: center;
+  }
+  
+  .Time_text {
+    font-size: 0.75rem;
+    color: #080808;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .All_IMAGE {
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .All_IMAGE img {
+    max-width: 75%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: auto;
+ 
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content:center;
+  
+    gap:10px;
+    margin-top: 2rem;
+  }
+  
+  .pagination_dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+  .pagination_dot.active {
+    background-color: #e85c41;
+  }
+  
+  @media (max-width: 991px) {
+    .All_Container {
+      padding: 2rem 1rem;
+    }
+    
+    .All_row {
+      flex-direction: column;
+    }
+    
+    .All_IMAGE {
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    
+    .All_IMAGE img {
+      max-width: 100%;
+    }
+    
+    .All_Top_Intro {
+      text-align: center;
+    }
+    
+    .All_Time {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .All_IMAGE img {
+        width: 70%;
+        height: auto;
+     
+      }
+      .All_Top_Intro h3 {
+font-size: 25px;
+        font-weight: 700;
+        color: #4a2e81;
+        line-height: 1.3;
+       
+      }
+      .All_Top_Intro p {
+        color: #666;
+        font-size: 15px;
+        line-height: 1;
+      }
+      .All_IMAGE {
+        display: flex;
+        justify-content: center;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      
+      
+   
+  
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    .All_IMAGE img {
+        width: 100%;
+        height: auto;
+     
+      }
+  }

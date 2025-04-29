@@ -14,13 +14,15 @@ const Landing = () => {
   return (
     <div>
       <InterFace/>
-      {/* <Explore/>
+    
+     <Explore/>
       <RELEASE/>
       <Featured/>
-      <AllBooks/>
+    <AllBooks/>
       <SUbSCripe/>
-      <Leatest/>
+      {/*   <Leatest/>
       <Footer/> */}
+       
 
 
       

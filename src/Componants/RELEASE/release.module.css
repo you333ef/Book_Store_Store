@@ -1,0 +1,251 @@
+.pararealise{
+   
+    background-color: rgba(252, 236, 236, 1);
+    padding: 30px;
+    margin-top: 15px;
+
+}
+.TITLE_Top{
+    display: flex;
+    justify-content: center;
+    flex-direction:column ;
+    align-items: center;
+   
+}
+/* handle hr around property */
+ .Top_rY h4,.details h5{
+  color: rgba(57, 50, 128, 1) !important;
+ }
+ .TITLE_Top small{
+  color: rgba(122, 122, 122, 1) !important;
+ }
+ .COLS{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+ 
+  
+ }
+ .details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+ 
+ 
+ }
+
+ .Unedr_rY{
+  overflow: hidden;
+ }
+ .Image img{
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+ 
+ }
+ .Image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+ }
+ .OPJO{
+  width: 80%;
+ }
+ .papa_rY{
+  background-color: rgba(252, 236, 236, 1);
+  padding: 20px;
+ }
+ .paginationDots {
+  display: flex;
+  gap: 8px;
+  /* المسافة من فوق نعتمد عليها بواسطة mt-4 utility من Bootstrap */
+  margin-top: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+.active {
+  background-color: #ff7b7b;
+  width: 12px;
+  height: 12px;
+}
+/* pagination wrapper (موجود عندك) */
+.paginationDots {
+  /* لا تغيير هنا */
+}
+
+/* الدوائر الافتراضية (غير النشطة) */
+.paginationDots ul.slick-dots li .dot {
+  position: relative !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: #ccc !important;
+  border-radius: 50% !important;
+  margin: 0 6px !important;
+}
+
+/* الدائرة النشطة */
+.paginationDots ul.slick-dots li.slick-active .dot {
+  width: 16px !important;
+  height: 16px !important;
+  background-color: transparent !important;
+  border: 2px solid rgba(237, 85, 59, 1) !important;
+}
+
+/* النقطة الداخلية داخل الدائرة النشطة */
+.paginationDots ul.slick-dots li.slick-active .dot::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 8px !important;
+  height: 8px !important;
+  background-color: rgba(237, 85, 59, 1) !important;
+  border-radius: 50% !important;
+}
+.Top_rY small{
+  color: rgba(122, 122, 122, 1);
+  font-weight: 600;
+  font-size: 14px;
+}
+.Top_rY  h4{
+  color: rgba(57, 50, 128, 1) !important;
+  font-weight: 700;
+ }
+ .details h5{
+  font-weight: 700;
+  font-size: 18px;
+ }
+ .details small{
+  color: rgba(136, 136, 136, 1);
+  font-weight: 600;
+  font-size: 13px;
+ }
+ .details p{
+  color: rgba(237, 85, 59, 1);
+  font-weight: 600;
+  font-size: 13px;
+ }
+ .Image img {
+  border-radius: 4px;
+  width:80%;    
+  height: auto;}
+
+/* 1) نخلّي الحاوية relative عشان الزرّ يكون absolute بداخلها */
+.Image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: visible; 
+}
+
+.addBtn {
+  position: absolute;
+  bottom:50px;          
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  width: 70%;             
+  max-width: none;        
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(237, 85, 59, 1);
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  z-index: 2;
+}
+
+.Image:hover .addBtn {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+/*  */
+/* تعديل تصميم النقاط */
+.paginationDots {
+  display: flex;
+  justify-content: center; /* لضمان أن النقاط في المنتصف */
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.paginationDots ul.slick-dots {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.paginationDots ul.slick-dots li {
+  position: relative;
+}
+
+.paginationDots ul.slick-dots li .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.paginationDots ul.slick-dots li.slick-active .dot {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid #ff7b7b; /* دائرة حول النقطة النشطة */
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.paginationDots ul.slick-dots li.slick-active .dot::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  margin: auto;
+  height: 8px;
+  background-color: #ff7b7b; /* لون النقطة الداخلية */
+  border-radius: 50%;
+}
+.viewMoreBtn_div{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 7px;
+  color: rgba(237, 85, 59, 1);
+  font-size: 15px;
+  font-weight: 700;
+}
+.divider{
+  color: rgba(224, 224, 224, 1);
+
+}
+@media (max-width: 900px) {
+  .viewMoreBtn ,.ICON_PADAEY{
+    display: none;
+  }
+}

@@ -1,0 +1,191 @@
+.carouselSection {
+    position: relative;
+    background-color: #fdf1f5;
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .navigationArrows {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+  }
+  
+  .arrowLeft, .arrowRight {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #ff7b7b;
+    cursor: pointer;
+  }
+  
+  .contentRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  .textCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    padding: 0 2rem;
+  }
+  
+  .imageCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bookImageWrapper {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .bookImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .textContent {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #41348b;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight:600 ;
+    padding: 3px;
+    color: #674fa3;
+    margin-bottom: 2rem;
+  }
+  
+  .readMoreBtn {
+    background: transparent;
+    color: #674fa3;
+    border: 1px solid #674fa3;
+    padding: 9px 20px;
+    font-size: 14px;
+    
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .readMoreBtn:hover {
+    background: rgba(103, 79, 163, 0.1);
+  }
+  
+  .arrow {
+    margin-left: 6px;
+  }
+  
+  .paginationDots {
+    display: flex;
+    margin-top: 2rem;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+  }
+  
+  .dot.active {
+    background-color: #ff7b7b;
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 991px) {
+    .textCol {
+      text-align: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      order: 2;
+    }
+    
+    .textContent {
+      text-align: center;
+      align-items: center;
+    }
+    
+    .imageCol {
+      order: 1;
+      margin-bottom: 2rem;
+    }
+    
+    .navigationArrows {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .title {
+      font-size: 2.5rem;
+    }
+    
+    .description {
+      font-size: 1rem;
+    }
+  }
+  /* شيلنا text-align: center من هنا عشان نبقى مسيطرين عليه بالـ utilities */
+.textContent {
+    /* text-align: center; */ 
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  /* لو حابب تضمن بالـ CSS كمان أنه يتحاذى start في lg+ */
+  @media (min-width: 992px) {
+    .textContent {
+      text-align: start;
+    }
+  }
+  
+  .paginationDots {
+    display: flex;
+    gap: 8px;
+    /* المسافة من فوق */
+    margin-top: 0;  /* هنعتمد على mt-4 من البوتستراب */
+  }
+  
