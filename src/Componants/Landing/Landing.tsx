@@ -20,8 +20,9 @@ const Landing = () => {
       <Featured/>
     <AllBooks/>
       <SUbSCripe/>
-      {/*   <Leatest/>
-      <Footer/> */}
+   <Leatest/>
+   
+      <Footer/>
        
 
 

@@ -1,0 +1,118 @@
+.LeatestContainer {
+    padding: 2rem 0;
+    background-color: #F9FBFC;
+  }
+  
+  .Title {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 2rem;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  .Title small {
+    display: block;
+    color: #7F8C8D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.875rem;
+  }
+  .Title h4 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0.5rem 1rem;
+    position: relative;
+    padding: 0 1rem;
+  }
+  .Title h4::before,
+  .Title h4::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background: #CED6E0;
+  }
+  .Title h4::before {
+    left: -100px;
+  }
+  .Title h4::after {
+    right: -100px;
+  }
+  
+  .Row {
+    display: flex;
+   
+  }
+  
+  .Details {
+    padding: 1rem 0.5rem;
+  }
+  .Details small {
+    font-size: 0.875rem;
+    color: #95A5A6;
+  }
+  .Details h5 {
+    font-size: 16px;
+    margin: 0.5rem 0;
+    color: #2C3E50;
+  }
+  
+  .SocialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   color: rgba(23, 63, 95, 1);
+   font-size: 14px;
+    gap:15px ;
+  }
+  .SocialIcons i {
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  @media(max-width: 1024px) {
+    .Row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+       
+      }
+      .Details hr {
+       width: 80%;
+      }
+      .SocialIcons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       color: rgba(23, 63, 95, 1);
+       font-size: 14px;
+       
+      }
+  }
+  .Row {
+    display: flex;     
+    flex-wrap: wrap;    
+    justify-content: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .Row > [class*="col-"] {
+      display: flex;          
+      flex-direction: column;  
+      align-items: center;    
+      margin-left: auto;       
+      margin-right: auto;
+    }
+  
+    .Details {
+      text-align: center;
+    }
+  
+    .Details hr {
+      width: 80%; 
+      margin: 0.5rem auto; 
+    }
+  }
+  

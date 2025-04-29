@@ -1,0 +1,204 @@
+.footer {
+    background-color: rgba(237, 85, 59, 1);
+    color: white;
+    padding: 3rem 2rem;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; /* Center elements horizontally */
+    text-align: center; /* Center text */
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center logo contents */
+    max-width: 350px;
+  }
+  
+  .logo img {
+    width: 40px; /* Reduced logo size */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .logo p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center; /* Center text */
+    margin: 0;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; /* Center link columns */
+    width: 100%;
+  }
+  
+  .linksColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center; /* Center links */
+    text-align: center;
+  }
+  
+  .linksColumn h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .linksColumn a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    transition: opacity 0.2s;
+  }
+  
+  .linksColumn a:hover {
+    opacity: 0.8;
+  }
+  
+  .social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    justify-content: center; /* Center social icons */
+  }
+  
+  .socialIcon {
+    background-color: white;
+    color: #e84c3d;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+  }
+  
+  .socialIcon:hover {
+    transform: scale(1.1);
+  }
+  
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 2rem;
+    align-items: center; /* Center bottom elements */
+    text-align: center;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  
+  .bottomLinks {
+    display: flex;
+    gap: 1.5rem;
+    font-weight: 600;
+    justify-content: center; /* Center bottom links */
+  }
+  
+  .bottomLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+  }
+  
+  .bottomLinks a:hover {
+    opacity: 0.8;
+  }
+  
+  /* تصميم متجاوب للشاشات المتوسطة */
+  @media (min-width: 768px) {
+    .top {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left; /* Return to left alignment on medium screens */
+      align-items: flex-start; /* Reset alignment */
+    }
+    
+    .logo {
+      align-items: flex-start; /* Reset alignment */
+    }
+    
+    .logo p {
+      text-align: left; /* Return to left alignment */
+    }
+    
+    .links {
+      flex-direction: row;
+      justify-content: flex-start; /* Align links to the left */
+      gap: 2rem; /* Reduced gap between link columns */
+      align-items: flex-start; /* Reset alignment */
+    }
+    
+    .linksColumn {
+      align-items: flex-start; /* Reset alignment */
+      text-align: left;
+    }
+    
+    .bottom {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
+    
+    .bottomLinks {
+      justify-content: flex-end; /* Align to right on larger screens */
+    }
+  }
+  
+  /* تصميم متجاوب للشاشات الكبيرة */
+  @media (min-width: 1024px) {
+    .footer {
+      padding: 4rem 2rem;
+    }
+    
+    .logo {
+      max-width: 400px;
+    }
+    
+    .logo img {
+      width: 120px; /* Slightly larger on desktop but still smaller than original */
+    }
+    
+    .links {
+      gap: 4rem; /* Increased gap on larger screens but still keeping columns close */
+    }
+  }
+   
+  .logo img {
+    width: 90px; /* Reduced logo size */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .logo p {
+   
+   font-weight: 500;
+  }
+  
